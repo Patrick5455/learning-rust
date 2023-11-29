@@ -9,8 +9,6 @@ p
 @rust-book/2-programming-a-guessing-game/guessing_game/Cargo.lock,9/3/93d12089cfc7ba1795f74407c53853861cda6af6
 @
 udemy/.gitignore,d/9/d9ac167e425a1b5e4dba4915d2240ba54680e430
-w
-G.idea/sonarlint/issuestore/2/d/2df02f0db81e3dfe801ae489d1f0a0e3a6b34529,b/6/b67df28988aa0958146693618b13b8888f85961b
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
