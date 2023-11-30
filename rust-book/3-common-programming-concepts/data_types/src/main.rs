@@ -189,6 +189,11 @@ fn main() {
     let b:[bool;5]=[false;5];
     let c:[&str;10]=["hello";10];
 
+    /***
+    The array named a will contain 5 elements that will all be set to the value 3 initially.
+    This is the same as writing let a = [3, 3, 3, 3, 3]; but in a more concise way.
+     */
+
     println!("repeating value in array a: {}", a[3]);
     println!("repeating value as array b: {}", b[3]);
     println!("repeating value as array c: {}", c[9]);
