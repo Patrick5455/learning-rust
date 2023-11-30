@@ -165,6 +165,10 @@ fn main() {
     However, arrays are more useful when you know the number of elements will not need to change.
     For example, if you were using the names of the month in a program,
     you would probably use an array rather than a vector because you know it will always contain 12 elements:
+
+
+    You write an array’s type using square brackets with the type of each element, a semicolon,
+    and then the number of elements in the array, like so:
      */
 
     let months:[&str;12] = [
@@ -174,6 +178,22 @@ fn main() {
     ];
 
     println!("month 5: {}", months[5]);
+
+    /***
+    You can also initialize an array to contain the same value for each element
+    by specifying the initial value, followed by a semicolon,
+    and then the length of the array in square brackets, as shown here:
+     */
+
+    let a = [3;5];
+    let b:[bool;5]=[false;5];
+    let c:[&str;10]=["hello";10];
+
+    println!("repeating value in array a: {}", a[3]);
+    println!("repeating value as array b: {}", b[3]);
+    println!("repeating value as array c: {}", c[9]);
+
+
 
 
 }
