@@ -7,6 +7,7 @@ fn main() {
      */
 
     //Scalar Types
+
     /***
     A scalar type represents a single value.
     Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters.
@@ -62,7 +63,6 @@ fn main() {
 
 
     //Floating-Point Types
-
     /***
     Rust also has two primitive types for floating-point numbers, which are numbers with decimal points.
     Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size, respectively.
@@ -98,5 +98,16 @@ fn main() {
     However, a “character” isn’t really a concept in Unicode, so your human intuition for what a “character” is may not match up with what a char is in Rust.
      */
 
+
+    //Compound Types
+    /***
+    Compound types can group multiple values into one type.
+    Rust has two primitive compound types: tuples and arrays.
+     */
+
+    //The Tuple Type
+    /***
+
+     */
 
 }
