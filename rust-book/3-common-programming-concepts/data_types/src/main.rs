@@ -107,7 +107,73 @@ fn main() {
 
     //The Tuple Type
     /***
-
+    A tuple is a general way of grouping together a number of values with a variety of types into one compound type.
+    Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+    We create a tuple by writing a comma-separated list of values inside parentheses.
+    Each position in the tuple has a type, and the types of the different values in the tuple don’t have to be the same.
      */
+
+    let tup:(i8, &str, bool, f32) = (1, "string", false, 6.4);
+    println!("tuple value at index 1: {}", tup.1);
+
+    /***
+    The variable tup binds to the entire tuple because a tuple is considered a single compound element.
+    To get the individual values out of a tuple,
+    we can use pattern matching to destructure a tuple value, like this:
+     */
+
+    let (x, y, z, a) = tup;
+    println!("x:{x}, y:{y}, z:{z}, a:{a}");
+    //This is called destructuring because it breaks the single tuple into four parts.
+
+    /***
+    We can also access a tuple element directly by using a period (.)
+    followed by the index of the value we want to access. For example:
+     */
+
+    let abc:(bool, &str, f32, i32) = (true, "down-to-earth", 7.0, 7);
+    let a_bool = abc.0;
+    let a_str = abc.1;
+    let a_float = abc.2;
+    let a_int = abc.3;
+
+    println!("a_bool: {a_bool}, a_str: {a_str}, a_float:{a_float}, a_int:{a_int}");
+
+    /***
+    The tuple without any values has a special name, unit.
+    This value and its corresponding type are both written () and represent an empty value or an empty return type.
+    Expressions implicitly return the unit value if they don’t return any other value.
+     */
+
+    //The Array Type
+    /***
+    Another way to have a collection of multiple values is with an array.
+    Unlike a tuple, every element of an array must have the same type.
+    Unlike arrays in some other languages, arrays in Rust have a fixed length.
+     */
+     let a = [7, 8, 9, 10];
+    let b:[&str;2] = ["abc", "def"];
+
+    /***
+    Arrays are useful when you want your data allocated on the stack rather than the heap
+    or when you want to ensure you always have a fixed number of elements.
+
+    An array isn’t as flexible as the vector type, though.
+    A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size.
+    If you’re unsure whether to use an array or a vector, chances are you should use a vector.
+
+    However, arrays are more useful when you know the number of elements will not need to change.
+    For example, if you were using the names of the month in a program,
+    you would probably use an array rather than a vector because you know it will always contain 12 elements:
+     */
+
+    let months:[&str;12] = [
+        "January", "February", "March", "April",
+        "May", "June", "July", "August",
+        "Spetember", "October", "November", "December"
+    ];
+
+    println!("month 5: {}", months[5]);
+
 
 }
