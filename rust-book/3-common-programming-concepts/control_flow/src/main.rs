@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+use std::fmt::format;
 use std::iter::Rev;
 
 fn main() {
@@ -119,5 +121,4 @@ fn print_range_of_numbers (start: i32, end :i32, reverse: bool) {
         }
     }
 }
-
 
